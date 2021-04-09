@@ -1,0 +1,75 @@
+* {
+    margin: 0
+}
+body {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 600;
+    background-color: rgb(116, 113, 113);
+}
+
+h1 {
+    font-size: 75px;
+}
+
+.bar-1 {
+    margin: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bar-1 input {
+    width: 140px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid black;
+}
+
+.bar-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar-3 {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+
+
+hr {
+    height: 3px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    color: rgb(114, 33, 33);
+}
+
+a:active {
+    color: rgb(20, 59, 20);
+}
+
+
+
+@media (min-width:768px) {
+    
+}
+
+@media (min-width:1024px) {
+
+}
