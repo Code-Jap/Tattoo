@@ -8,39 +8,66 @@ body {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 90px;
 }
+
+h2 {
+    font-size: 34px;
+    text-align: center;
+    margin: 60px 0px 80px 0px;
+    text-shadow: 1px 1px rgb(114, 33, 33);
+}
+
 
 .bar-1 {
     margin: 10px 10px 0px 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.bar-1 p {
+    color: rgb(114, 33, 33);
+    font-size: 22px;
+    margin: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .bar-1 input {
     width: 140px;
     margin-left: 5px;
-    margin-right: 5px;
-    border: 2px solid black;
+    margin-right: 10px;
+    border:solid rgb(114, 33, 33) 3px;
+
 }
 
 .bar-2 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
+    width: auto;
+    text-shadow: 5px 5px rgb(114, 33, 33);
 }
 
 .bar-3 {
-    font-size: 20px;
+    font-size: 22px;
     display: flex;
     flex-direction: row;
     margin: 20px;
     justify-content: space-evenly;
 }
 
+.footer-bar {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    color: rgb(114, 33, 33);
+
+}
+
 
 hr {
-    height: 3px;
+    height: 4px;
     border: none;
     background-color: rgb(0, 0, 0);
     width: 90%;
@@ -65,8 +92,104 @@ a:active {
 }
 
 
+.form {
+    border: 5px solid rgb(114, 33, 33);;
+    background-color: rgb(182, 179, 179);
+    box-shadow: 6px 6px;
+    margin: 60px 180px;
+    padding: 60px 80px;
+}
 
-@media (min-width:768px) {
+.form hr {
+    width: 100%;
+    margin: 20px 0px
+}
+
+
+.form input, textarea  {
+    border: 2px solid black;
+    margin-top: 15px;
+}
+
+.button[type="submit"] {
+    background-color: rgb(173, 166, 166);
+    font-weight: 700;
+    padding: 5px 10px;
+    text-transform: capitalize;
+
+}
+
+.button[type="reset"] {
+    background-color: rgb(173, 166, 166);
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    margin: 40px 550px 0px 0px;
+}
+ 
+.button:hover {
+    background-color:rgb(114, 33, 33)
+}
+
+.grid {
+    display: grid;
+    grid-gap: 3px solid black;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 120px auto 120px;
+    margin: 20px 0px ;
+    padding: 40px;
+
+}
+
+.header {
+    font-size: 34px;
+    text-shadow: 1px 1px rgb(114, 33, 33);
+    grid-column: 3 / 11;
+    
+}
+
+.content {
+    grid-column: 2 / 6;
+}
+
+.aside {
+    grid-column: 8 / 11;
+}
+
+.footer {
+    font-size: 34px;
+    grid-column: 5 / 11;
+    margin-top: 30px;
+    
+}
+
+.ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 80px);
+    text-align: center;
+    border: 3px solid black;
+    margin: 0px 60px;
+    padding: 0px 120px;
+    list-style: none;
+    text-align: start;
+}
+
+.li-2 {
+    color:rgb(114, 33, 33);
+    font-style: italic;
+    list-style: none;
+    text-align: start;
+}
+
+.li-1 {
+    list-style-image: url(Afbeeldingen/Machine_3.1.png);
+}
+
+    
+
+
+@media (max-width:768px) {
     
 }
 

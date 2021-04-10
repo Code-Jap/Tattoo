@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta name="description" content="Mijn eerste website over (mijn) tatoeages">
+    <meta name="keywords"
+        content="Tattoo, Jap, tatoeages, stijlen, Japans, foto's, WincAcademy, font-end, full-stack, HTML, coding">
+    <meta name="author" content="Jasper Ekkel">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <title>Tattoo-Jap / Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="bar-1">
+            <p>Contact</p>
+            <label for="zoek"><em>Zoek:</em>
+                <input type="text" name="zoek"></label>
+        </div>
+
+        <div class="bar-2">
+            <img src="Afbeeldingen/Machine_1.2.png" alt="Tattoo machine" width="300px" title="Tattoo machine">
+            <h1>TattooZz</h1>
+            <img src="Afbeeldingen/Machine_1.1.png" alt="Tattoo machine" width="300px" title="Tattoo machine">
+        </div>
+        <hr>
+
+
+        <nav class="bar-3">
+            <a href="index.html">Home</a>
+            <a href="about.html">Over mijzelf</a>
+            <a href="foto's.html">Foto's</a>
+            <a href="stijlen">Stijlen</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+
+        <h2>Contactformulier</h2>
+        <span align="center">
+            <p>Als u op deze pagina uw gegevens achterlaat, zal ik zo spoedig mogelijk contact met u opnemen.</p>
+        </span>
+
+
+        <form name="contact-formulier" method="POST" data-netlify="true" class="form" title="Contact-formulier">
+            <p>
+                <label>Naam: </label><input type="text" name="naam:" required>
+            </p>
+            <p>
+                <label>Email: </label><input type="email" name="email:" required>
+            </p>
+            <p>
+                <label>Telefoonnummer: </label><input type="tel" name="telefoonnummer:">
+            </p>
+
+            <p>
+                <label>Geboortedatum: </label><input type="date" name="geboortedatum:">
+            </p>
+            <br>
+            <hr>
+            <br>
+            <p>
+                <label>Geslacht:</label>
+
+
+                <input name="Geslacht:" type="radio" value="man">
+                <label for="man">Man</label>
+                <input name="Geslacht:" type="radio" value="vrouw">
+                <label for="vrouw">Vrouw</label>
+            </p>
+            <br>
+            <p>
+                <label>Welke stijlen spreken je aan?</label>
+            </p>
+            <br>
+            <p>
+                <input type="checkbox" name="Tattoo:" id="Japans" value="japans">
+                <label for="Japans">Japans</label>
+
+                <input type="checkbox" name="Tattoo:" id="oldschool" value="oldschool">
+                <label for="oldschool">Oldschool</label>
+            </p>
+
+
+            <p>
+                <input type="checkbox" name="Tattoo:" id="maori" value="maori">
+                <label for="maori">Maori</label>
+
+                <input type="checkbox" name="Tattoo:" id="tribal" value="tribal">
+                <label for="tribal">Tribal</label>
+            </p>
+
+            <p>
+
+                <input type="checkbox" name="Tattoo:" id="dotwork" value="dotwork">
+                <label for="dotwork">Dotwork</label>
+
+                <input type="checkbox" name="Tattoo:" id="blackwork" value="blackwork">
+                <label for="blackwork">Blackwork</label>
+            </p>
+            <p>
+                <input type="checkbox" name="Tattoo:" id="geometrisch" value="geometrisch">
+                <label for="geometrisch">Geometrisch</label>
+
+                <input type="checkbox" name="Tattoo:" id="minimalistisch" value="minimalistisch">
+                <label for="minimalistisch">Minimalistisch</label>
+            </p>
+
+            <br>
+            <hr>
+            <br>
+            <p>
+                <label>Laat een berichtje achter: </label>
+                <textarea name="berichtje" rows="4" cols="30"></textarea>
+            </p>
+            <br>
+            <p>
+                <label>Upload een afbeelding van je favo tattoo: </label>
+                <input type="file" name="tattoo:">
+            </p>
+            <br>
+            <p>
+                <label>Link naar je eigen site: </label>
+                <input type="url" name="url:">
+            </p>
+            <p>
+                <input class="button" type="reset" value="reset" name="reset">
+                <input class="button" type="submit" value="submit" name="submit">
+            </p>
+        </form>
+
+
+    </main>
+
+    <footer>
+        <hr>
+
+        <nav class="bar-3">
+            <a href="https://www.facebook.com/Un3Xisted">Facebook</a>
+            <a href="https://www.instagram.com/jasperekkel/">Instagram</a>
+            <a href="https://www.linkedin.com/in/jasper-ekkel/">LinkedIn</a>
+        </nav>
+
+        <hr>
+
+        <div class="footer-bar">
+            <p> © 2021 Copyright - Jasper Ekkel</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
