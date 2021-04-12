@@ -2,7 +2,7 @@
     margin: 0
 }
 body {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     background-color: rgb(116, 113, 113);
 }
@@ -18,9 +18,13 @@ h2 {
     text-shadow: 1px 1px rgb(114, 33, 33);
 }
 
+h3 {
+    text-shadow: 1px 1px rgb(114, 33, 33);
+}
+
 
 .bar-1 {
-    margin: 10px 10px 0px 10px;
+    margin: 15px 10px 0px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -31,6 +35,8 @@ h2 {
     margin: none;
     text-transform: uppercase;
     letter-spacing: 3px;
+    border-top: dotted black;
+    border-bottom: dotted black;
 }
 
 .bar-1 input {
@@ -41,19 +47,31 @@ h2 {
 
 }
 
+.bar-1 label {
+    margin-left: 5px;
+}
+
+.envelop {
+    margin-left: 800px;
+    
+}
+
+
 .bar-2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: top;
-    width: auto;
     text-shadow: 5px 5px rgb(114, 33, 33);
+    }
+
+.test {
+    display: none;
 }
+
 
 .bar-3 {
     font-size: 22px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     margin: 20px;
     justify-content: space-evenly;
 }
@@ -94,9 +112,9 @@ a:active {
 
 
 .form {
-    border: 5px solid rgb(114, 33, 33);;
+    border: 5px solid rgb(114, 33, 33);
     background-color: rgb(182, 179, 179);
-    box-shadow: 6px 6px;
+    box-shadow: 5px 5px 40px black;
     margin: 60px 180px;
     padding: 60px 80px;
 }
@@ -107,11 +125,12 @@ a:active {
 }
 
 
-.form input, textarea  {
+.form input, textarea {
     border: 2px solid black;
     margin-top: 15px;
-    width: auto;
+    box-shadow: 5px 5px 10px grey;
 }
+
 
 .button[type="submit"] {
     background-color: rgb(173, 166, 166);
@@ -198,6 +217,62 @@ a:active {
     margin-right: 10px;
 }
 
+.grid-2 {
+    display: grid;
+    grid-gap: 55px;
+    margin-bottom: 60px;
+    grid-template-columns: 10px 1fr 1fr 40px;
+    grid-template-rows: repeat(5, 430px);
+    list-style: none;
+    
+}
+
+.grid-2 li {
+    border: 3px solid rgb(114, 33, 33);
+    box-shadow: 4px 4px;
+    background-color: rgb(182, 179, 179);
+    list-style-image: url(Afbeeldingen/Machine_5.png);
+    padding-left: 10px;
+    
+}
+
+
+.maori {
+    grid-column: 2 / 3
+}
+
+.tribal {
+    grid-column: 3 / 4;
+}
+
+.oldschool {
+    grid-column: 2 / 3;
+}
+
+.japans {
+    grid-column: 3 / 4;
+}
+
+.blackwork {
+    grid-column: 2 / 3;
+}
+
+.dotwork {
+    grid-column: 3 / 4;
+}
+
+.minimalistisch {
+    grid-column: 2 / 3;
+}
+
+.geometrisch {
+    grid-column: 3 / 4;
+}
+
+.new-school {
+    grid-column: 2 / 3;
+}
+
     
 
 
@@ -251,14 +326,46 @@ a:active {
 
     .bar-2 {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: baseline;
-        width: auto;
+        flex-flow: row wrap;
+        align-items: top;
         text-shadow: 5px 5px rgb(114, 33, 33);
     }
+
+    .test {
+        display: block;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-gap: 55px;
+        grid-template-columns: 10px 1fr 1fr 1fr 10px;
+        grid-template-rows: repeat(3, 350px);
+        list-style: none;
+        
+    }
     
+    .grid-2 li {
+        border: 3px solid rgb(114, 33, 33);
+        box-shadow: 4px 4px;
+        background-color: rgb(182, 179, 179);
+        list-style-image: url(Afbeeldingen/Machine_5.png);
+        padding-left: 10px;
+    }
+
+    .blackwork {
+        grid-column: 4 / 5;
+        grid-row: 1
+    }
+
+    .dotwork {
+        grid-row: 2;
+        grid-column: 4 / 5;
+    }
+
+    .new-school {
+        grid-row: 3;
+        grid-column: 4 / 5;
+    }
 }
 
 @media (min-width:1024px) {
@@ -311,7 +418,17 @@ a:active {
         flex-direction: row;
         justify-content: space-between;
         align-items:stretch;
-        width: auto;
         text-shadow: 5px 5px rgb(114, 33, 33);
     }
+
+    .grid-2 {
+        display: grid;
+        grid-gap: 55px;
+        margin-bottom: 60px;
+        grid-template-columns: 10px 1fr 1fr 1fr 40px;
+        grid-template-rows: repeat(3, 240px);
+        list-style: none;
+        
+    }
+
 }
