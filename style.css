@@ -51,22 +51,18 @@ h3 {
     margin-left: 5px;
 }
 
-.envelop {
-    margin-left: 800px;
-    
-}
-
 
 .bar-2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     text-shadow: 5px 5px rgb(114, 33, 33);
-    }
-
-.test {
-    display: none;
+    
 }
 
+.bar-2 h1 {
+    font-size: 48px;
+}
 
 .bar-3 {
     font-size: 22px;
@@ -77,9 +73,11 @@ h3 {
 }
 
 .footer-bar {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
-    margin: 10px;
+    margin: 0px 5px;
     color: rgb(114, 33, 33);
 
 }
@@ -159,7 +157,7 @@ a:active {
     display: grid;
     grid-gap: 3px solid black;
     grid-template-columns: 80px 1fr 80px;
-    grid-template-rows: 120px auto auto 100px;
+    grid-template-rows: 120px auto auto 120px;
     margin: 20px 0px ;
     padding: 40px;
 
@@ -231,11 +229,10 @@ a:active {
     border: 3px solid rgb(114, 33, 33);
     box-shadow: 4px 4px;
     background-color: rgb(182, 179, 179);
-    list-style-image: url(Afbeeldingen/Machine_5.png);
+    list-style-image: url(Afbeeldingen/Machine_5.png) ;
     padding-left: 10px;
     
 }
-
 
 .maori {
     grid-column: 2 / 3
@@ -272,6 +269,50 @@ a:active {
 .new-school {
     grid-column: 2 / 3;
 }
+
+
+.about {
+    display: grid;
+    
+    text-align: center;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: 320px 340px 360px 380px 320px;
+    padding: 20px 20px;
+}
+
+.about p {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.about-2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.about-2 p {
+    font-size: 12px;
+}
+
+.about-3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.about-4 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.about-4 p {
+    font-size: 12px;
+}
+
+.about-5 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
 
     
 
@@ -326,9 +367,17 @@ a:active {
 
     .bar-2 {
         display: flex;
-        flex-flow: row wrap;
+        justify-content: space-between;
         align-items: top;
         text-shadow: 5px 5px rgb(114, 33, 33);
+    }
+
+    .bar-2 img {
+        width: 200px;
+    }
+
+    .bar-2 h1 {
+        font-size: 90px;
     }
 
     .test {
@@ -366,6 +415,16 @@ a:active {
         grid-row: 3;
         grid-column: 4 / 5;
     }
+
+
+    .about {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 40px 1fr 40px;
+        grid-template-rows: 220px 320px 240px 360px;
+        padding: 20px 20px;
+    }
+
 }
 
 @media (min-width:1024px) {
@@ -430,5 +489,43 @@ a:active {
         list-style: none;
         
     }
+
+    .about {
+        display: grid;
+        text-align: center;
+        grid-template-columns: 40px 1fr 1fr 1fr 40px;
+        grid-template-rows: 380px 180px 360px;
+        padding: 20px 20px;
+    }
+    
+    .about p {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    
+    .about-2 {
+        grid-column: 3 / 5;
+        grid-row: 1;
+    }
+    
+    .about-2 p {
+        font-size: 12px;
+    }
+    
+    .about-3 {
+        grid-column: 2 / 5;
+        grid-row: 2;
+    }
+    
+    .about-4 {
+        grid-column: 3 / 5;
+        grid-row: 3;
+    }
+    
+    .about-5 {
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+
 
 }
